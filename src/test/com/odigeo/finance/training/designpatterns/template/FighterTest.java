@@ -8,9 +8,9 @@ public class FighterTest {
 
     @Test
     public void createAllTypeOfFighters() {
-        Fighter humanFighter = new Fighter("human");
-        Fighter saiyanFighter = new Fighter("saiyan");
-        Fighter monsterFighter = new Fighter("monster");
+        Fighter humanFighter = new HumanFighter();
+        Fighter saiyanFighter = new SaiyanFighter();
+        Fighter monsterFighter = new MonsterFighter();
 
         assertEquals(humanFighter.getType(), "human");
         assertEquals(saiyanFighter.getType(), "saiyan");
@@ -19,9 +19,9 @@ public class FighterTest {
 
     @Test
     public void fightersAttack() {
-        Fighter humanFighter = new Fighter("human");
-        Fighter saiyanFighter = new Fighter("saiyan");
-        Fighter monsterFighter = new Fighter("monster");
+        Fighter humanFighter = new HumanFighter();
+        Fighter saiyanFighter = new SaiyanFighter();
+        Fighter monsterFighter = new MonsterFighter();
 
         assertEquals(humanFighter.attack(), "Fighter has attacked!");
         assertEquals(saiyanFighter.attack(), "Fighter has attacked!");
@@ -30,9 +30,9 @@ public class FighterTest {
 
     @Test
     public void fightersEatBean() {
-        Fighter humanFighter = new Fighter("human");
-        Fighter saiyanFighter = new Fighter("saiyan");
-        Fighter monsterFighter = new Fighter("monster");
+        Fighter humanFighter = new HumanFighter();
+        Fighter saiyanFighter = new SaiyanFighter();
+        Fighter monsterFighter = new MonsterFighter();
 
         assertEquals(humanFighter.eatBean(), "Fighter has eaten a magic bean and health has been restored!");
         assertEquals(saiyanFighter.eatBean(), "Fighter has eaten a magic bean and health has been restored!");
@@ -41,9 +41,9 @@ public class FighterTest {
 
     @Test
     public void fightersPowerUp() {
-        Fighter humanFighter = new Fighter("human");
-        Fighter saiyanFighter = new Fighter("saiyan");
-        Fighter monsterFighter = new Fighter("monster");
+        Fighter humanFighter = new HumanFighter();
+        Fighter saiyanFighter = new SaiyanFighter();
+        Fighter monsterFighter = new MonsterFighter();
 
         assertEquals(humanFighter.powerUp(), "Fighter tries to power up... but is only a human :(");
         assertEquals(saiyanFighter.powerUp(), "Fighter has powered up and now is a supersaiyan!");
